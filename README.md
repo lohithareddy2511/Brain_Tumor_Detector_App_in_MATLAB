@@ -15,8 +15,6 @@ This interactive app allows users to:
 
 The tool is built using **MATLAB App Designer components**, providing an intuitive and visually interactive platform for beginners to explore medical image processing.
 
----
-
 ## ✨ Features
 
 - 🖼️ **Load grayscale or RGB MRI scans**
@@ -25,14 +23,10 @@ The tool is built using **MATLAB App Designer components**, providing an intuiti
 - 🧠 **Tumor region segmentation**
 - 🖱️ **Interactive GUI** with reset and step-by-step processing
 
----
-
 ## 🛠️ Requirements
 
 - MATLAB R2021a or newer (App Designer supported)
 - Image Processing Toolbox
-
----
 
 ## 📦 Installation
 
@@ -46,8 +40,6 @@ The tool is built using **MATLAB App Designer components**, providing an intuiti
 
 3. Click **Run** to launch the app GUI.
 
----
-
 ## 🎮 Usage Instructions
 
 1. Click on **"Select MRI"** to load an image (`.jpg`, `.png`, `.bmp`).
@@ -55,8 +47,6 @@ The tool is built using **MATLAB App Designer components**, providing an intuiti
 3. Click **"Edge Detect"** to extract boundaries using the Sobel operator.
 4. Click **"Detect Tumor"** to highlight the largest solid region assumed to be a tumor.
 5. Click **"Reset"** to clear all images and restart the process.
-
----
 
 ## 📷 Screenshots
 
