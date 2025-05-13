@@ -50,22 +50,13 @@ The tool is built using **MATLAB App Designer components**, providing an intuiti
 
 ### 🏠 Main Interface
 
-![Main GUI](screenshots/main_gui.png)
+![image](https://github.com/user-attachments/assets/f0de53cf-6000-4f56-9230-83e897367821)
+
 
 ### 🧠 Tumor Detection Example
 
-![Tumor Segmentation](screenshots/tumor_segmentation.png)
+![image](https://github.com/user-attachments/assets/4add31b6-8ff1-4b3e-ba8b-fcf094f11c04)
 
----
-
-## 🧪 Example MRI Images
-
-Include some example MRI scans in the `examples/` folder for testing:
-
-* `examples/sample1.png`
-* `examples/sample2.jpg`
-
----
 
 ## 📂 Project Structure
 
