@@ -13,6 +13,44 @@ This interactive app allows users to:
 
 The tool is built using **MATLAB App Designer components**, providing an intuitive and visually interactive platform for beginners to explore medical image processing.
 
+## How It Works
+
+**1. What is MRI?**
+MRI (Magnetic Resonance Imaging) is a powerful medical imaging technique used to visualize the brain and other soft tissues. It works by using strong magnetic fields and radio waves to produce detailed images of organs and tissues inside the body. MRI is particularly useful for brain imaging because it offers excellent contrast between different soft tissues, which helps in identifying abnormalities like tumors.
+
+In brain MRIs, a tumor typically appears as a region with different intensity (brighter or darker) compared to surrounding tissue. This contrast makes it possible to detect tumors visually and computationally.
+
+**2. Preprocessing with Median Filtering**
+MRI images often contain noise, which can obscure details and affect further analysis. To address this, the first step in processing is to remove the noise using a median filter.
+
+Median filtering is a non-linear process used to remove noise while preserving edges. It works by sliding a small window (usually 3x3 or 5x5) over each pixel in the image and replacing the central pixel with the median value of the surrounding pixels. Unlike averaging filters, the median filter is very effective at removing salt-and-pepper noise without blurring edges.
+
+This preprocessing step improves the clarity of the image, which is crucial for accurately detecting edges and segmenting tumor regions.
+
+**3. Edge Detection Using Sobel Operator**
+Once the image is denoised, the next step is to identify the edges of various structures within the brain. Edge detection highlights areas of the image where there is a sudden change in intensity—typically indicating boundaries between different tissues or between a tumor and normal brain matter.
+
+This app uses the Sobel operator, a classical edge detection method that computes the gradient of image intensity. It uses two 3x3 kernels (for horizontal and vertical gradients), then combines these to estimate the magnitude of the gradient at each point in the image. The result is an image where bright lines indicate edges.
+
+Detecting edges helps localize the boundaries of the tumor and supports more accurate segmentation.
+
+**4. Tumor Segmentation and Detection**
+After identifying the edges, the app proceeds to detect the tumor by segmenting the image into regions.
+
+The segmentation process involves:
+
+Thresholding the filtered grayscale image into a binary image, where bright areas (likely tumors) become white and the rest black.
+
+Labeling the connected white regions using bwlabel, which assigns a unique label to each connected component.
+
+Analyzing these labeled regions using regionprops, which extracts features like area and solidity.
+
+The algorithm selects the most solid and largest region under the assumption that tumors are usually solid and prominent in size.
+
+The detected tumor region is then dilated slightly to make it more visible, and its boundary is traced and overlaid in yellow on the original image.
+
+This method is rule-based and straightforward, offering a transparent and explainable approach to tumor detection suitable for educational purposes.
+
 ## ✨ Features
 
 - 🖼️ **Load grayscale or RGB MRI scans**
