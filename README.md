@@ -80,7 +80,6 @@ Brain-Tumor-Detector-App/
 └── screenshots/                     # GUI screenshots (optional)
 ```
 
----
 
 ## 🧠 How Tumor is Detected?
 
@@ -90,29 +89,13 @@ Brain-Tumor-Detector-App/
 4. The **largest solid region** is assumed to be the tumor.
 5. The tumor region is **highlighted** with a yellow boundary.
 
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! If you find bugs or have suggestions for improvements, feel free to open an issue or submit a PR.
-
----
-
 ## 📜 License
 
 This project is licensed under the **MIT License**. See `LICENSE` for more details.
 
----
-
 ## 🧑‍💻 Author
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
-
----
-
-```
-
----
+K. Lohitha Reddy
 
 ### 📌 Notes for You:
 - Replace `yourusername` with your actual GitHub username.
@@ -120,7 +103,6 @@ Made with ❤️ by [Your Name](https://github.com/yourusername)
 - You can also provide `.mlapp` version if you convert it later using MATLAB App Designer.
 
 Let me know if you’d like help generating those screenshots or converting to `.mlapp` format!
-```
 
 # Results
 ![image](https://github.com/user-attachments/assets/4add31b6-8ff1-4b3e-ba8b-fcf094f11c04)
