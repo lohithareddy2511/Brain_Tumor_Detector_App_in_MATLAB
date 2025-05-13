@@ -1,7 +1,5 @@
 # Brain_Tumor_Detector_App_in_MATLAB
 
-# Brain Tumor Detector App 🧠🔍
-
 A simple MATLAB GUI application for detecting brain tumors from MRI images using basic image processing techniques such as **median filtering**, **Sobel edge detection**, and **region-based segmentation**.
 
 ## 🚀 Overview
@@ -34,7 +32,7 @@ The tool is built using **MATLAB App Designer components**, providing an intuiti
    ```bash
    git clone https://github.com/yourusername/Brain-Tumor-Detector-App.git
    cd Brain-Tumor-Detector-App
-````
+   ````
 
 2. Open `Brain_Tumor_Detector_App_2.m` in MATLAB.
 
